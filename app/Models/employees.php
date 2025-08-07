@@ -12,7 +12,8 @@ class employees extends Model
         'firstName',
         'lastName',
         'email',
-        'password'
+        'password',
+        "role_id"
     ];
     public $timestamps = false;
 }
