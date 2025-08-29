@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ Route::delete('/delete/{id}',[EmployeesController::class,'delete_user']);
 Route::put('/update/{id}',[EmployeesController::class,'update_user']);
 
 Route::get('/getrole/{id}',[RoleController::class,'get_role_by_id']);
+Route::post('register',[AuthController::class,'register']);
