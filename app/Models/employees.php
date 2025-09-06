@@ -3,11 +3,10 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Laravel\Passport\Contracts\OAuthenticatable;
-use Laravel\Passport\HasApiTokens;
+use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class employees extends  Authenticatable implements OAuthenticatable
+class employees extends  Authenticatable
 {
     use HasFactory,HasApiTokens;
     protected $fillable =[
